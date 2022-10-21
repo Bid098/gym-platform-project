@@ -1,0 +1,274 @@
+:root
+{
+    /*===== --p -> palette =====*/
+    --p-background-op1:rgba(44, 54, 57, 0.1);
+    --p-background-op2:rgba(44, 54, 57, 0.2);
+    --p-background-op3:rgba(44, 54, 57, 0.3);
+    --p-background-op4:rgba(44, 54, 57, 0.4);
+    --p-background-op5:rgba(44, 54, 57, 0.5);
+    --p-background-op6:rgba(44, 54, 57, 0.6);
+    --p-background-op7:rgba(44, 54, 57, 0.7);
+    --p-background-op8:rgba(44, 54, 57, 0.8);
+    --p-background-op9:rgba(44, 54, 57, 0.9);
+    --p-background:#2c3639;
+
+    --p-disabled-op1:rgba(47, 78, 79, 0.1);
+    --p-disabled-op2:rgba(47, 78, 79, 0.2);
+    --p-disabled-op3:rgba(47, 78, 79, 0.3);
+    --p-disabled-op4:rgba(47, 78, 79, 0.4);
+    --p-disabled-op5:rgba(47, 78, 79, 0.5);
+    --p-disabled-op6:rgba(47, 78, 79, 0.6);
+    --p-disabled-op7:rgba(47, 78, 79, 0.7);
+    --p-disabled-op8:rgba(47, 78, 79, 0.8);
+    --p-disabled-op9:rgba(47, 78, 79, 0.9);
+    --p-disabled:#2f4e4f;
+
+    --p-primary-buttons-op1:rgba(162, 123, 92, 0.1);
+    --p-primary-buttons-op2:rgba(162, 123, 92, 0.2);
+    --p-primary-buttons-op3:rgba(162, 123, 92, 0.3);
+    --p-primary-buttons-op4:rgba(162, 123, 92, 0.4);
+    --p-primary-buttons-op5:rgba(162, 123, 92, 0.5);
+    --p-primary-buttons-op6:rgba(162, 123, 92, 0.6);
+    --p-primary-buttons-op7:rgba(162, 123, 92, 0.7);
+    --p-primary-buttons-op8:rgba(162, 123, 92, 0.8);
+    --p-primary-buttons-op9:rgba(162, 123, 92, 0.9);
+    --p-primary-buttons:#a27b5c;
+    
+    --p-text-op1:rgba(220, 215, 201, 0.1);
+    --p-text-op2:rgba(220, 215, 201, 0.2);
+    --p-text-op3:rgba(220, 215, 201, 0.3);
+    --p-text-op4:rgba(220, 215, 201, 0.4);
+    --p-text-op5:rgba(220, 215, 201, 0.5);
+    --p-text-op6:rgba(220, 215, 201, 0.6);
+    --p-text-op7:rgba(220, 215, 201, 0.7);
+    --p-text-op8:rgba(220, 215, 201, 0.8);
+    --p-text-op9:rgba(220, 215, 201, 0.9);
+    --p-text:#dcd7c9;
+    
+    --p-border-op1:rgba(211, 201, 198, 0.1);
+    --p-border-op2:rgba(211, 201, 198, 0.2);
+    --p-border-op3:rgba(211, 201, 198, 0.3);
+    --p-border-op4:rgba(211, 201, 198, 0.4);
+    --p-border-op5:rgba(211, 201, 198, 0.5);
+    --p-border-op6:rgba(211, 201, 198, 0.6);
+    --p-border-op7:rgba(211, 201, 198, 0.7);
+    --p-border-op8:rgba(211, 201, 198, 0.8);
+    --p-border-op9:rgba(211, 201, 198, 0.9);
+    --p-border:#d3c9c6;
+    
+    --p-focus-op1:rgba(161, 189, 216, 0.1);
+    --p-focus-op2:rgba(161, 189, 216, 0.2);
+    --p-focus-op3:rgba(161, 189, 216, 0.3);
+    --p-focus-op4:rgba(161, 189, 216, 0.4);
+    --p-focus-op5:rgba(161, 189, 216, 0.5);
+    --p-focus-op6:rgba(161, 189, 216, 0.6);
+    --p-focus-op7:rgba(161, 189, 216, 0.7);
+    --p-focus-op8:rgba(161, 189, 216, 0.8);
+    --p-focus-op9:rgba(161, 189, 216, 0.9);
+    --p-focus:#a1bdd8;
+    
+    --p-error-op1:rgba(216, 161, 161, 0.1);
+    --p-error-op2:rgba(216, 161, 161, 0.2);
+    --p-error-op3:rgba(216, 161, 161, 0.3);
+    --p-error-op4:rgba(216, 161, 161, 0.4);
+    --p-error-op5:rgba(216, 161, 161, 0.5);
+    --p-error-op6:rgba(216, 161, 161, 0.6);
+    --p-error-op7:rgba(216, 161, 161, 0.7);
+    --p-error-op8:rgba(216, 161, 161, 0.8);
+    --p-error-op9:rgba(216, 161, 161, 0.9);
+    --p-error:#d8a1a1;
+    
+    --p-valid-op1:rgba(162, 216, 161, 0.1);
+    --p-valid-op2:rgba(162, 216, 161, 0.2);
+    --p-valid-op3:rgba(162, 216, 161, 0.3);
+    --p-valid-op4:rgba(162, 216, 161, 0.4);
+    --p-valid-op5:rgba(162, 216, 161, 0.5);
+    --p-valid-op6:rgba(162, 216, 161, 0.6);
+    --p-valid-op7:rgba(162, 216, 161, 0.7);
+    --p-valid-op8:rgba(162, 216, 161, 0.8);
+    --p-valid-op9:rgba(162, 216, 161, 0.9);
+    --p-valid:#a2d8a1;
+
+    --icon-white:#dcd7c9;
+    --icon-black:#2c3639;
+    /*==========================*/
+
+    /*===== --f -> font ======*/
+    --f-2extra-small-size:0.3em;
+    --f-extra-small-size:0.4em;
+    --f-small-size:0.67em;
+    --f-normal-size:1em;
+
+    --f-family: 'Poppins', sans-serif;
+    /*==========================*/
+
+}
+
+body
+{
+    font-family: var(--f-family);
+}
+
+/*=============== CUSTOM TAGS =================*/
+/*INPUT TAGS*/
+
+/*container*/
+[data-input-tag="input-text"]
+{
+    position:relative;
+    width: 50vmin;
+}
+[data-input-tag="input-text-img"]
+{
+    position:relative;
+    width: calc(50vmin - 2rem);
+}
+
+/*input*/
+[data-input-tag="input-text"] input
+{
+    
+    position:relative;
+    display:block;
+    width: 100%;
+    line-height:1.5;
+    padding: .675rem .75rem .375rem .75rem;
+    border: 1px solid var(--p-text-op5);
+    background-color:  var(--p-background);
+    color: var(--p-text);
+    border-radius:8px;
+    outline: 1px solid var(--p-border-op4);
+    -webkit-transition: outline-color .25s linear;
+        -moz-transition: outline-color .25s linear;
+            -o-transition: outline-color .25s linear;
+                transition: outline-color .25s linear;
+}
+[data-input-tag="input-text-img"] input
+{
+    position:relative;
+    display:block;
+    width: 100%;
+    line-height:1.5;
+    padding: .675rem .75rem .375rem 2.75rem;
+    border: 1px solid var(--p-text-op5);
+    background-color:  var(--p-background);
+    color: var(--p-text);
+    border-radius:8px;
+    outline: 1px solid var(--p-border-op4);
+    -webkit-transition: outline-color .25s linear;
+        -moz-transition: outline-color .25s linear;
+            -o-transition: outline-color .25s linear;
+                transition: outline-color .25s linear;
+}
+
+/*label*/
+[data-input-tag="input-text"] label
+{
+    position:absolute;
+    pointer-events:none;
+    color: var(--p-text);
+    left:.75rem;
+    top: calc(70% - var(--f-normal-size));
+    opacity:1;
+    float:left;
+    text-align:left;
+    --f-family: 'Poppins', sans-serif;
+    -webkit-transition: .25s;
+        -moz-transition: .25s;
+            -o-transition: .25s;
+                transition: .25s;
+}
+[data-input-tag="input-text-img"] label
+{
+    position:absolute;
+    pointer-events:none;
+    color: var(--p-text);
+    left: 2.75rem;
+    top: calc(70% - var(--f-normal-size));
+    opacity:1;
+    float:left;
+    text-align:left;
+    --f-family: 'Poppins', sans-serif;
+    -webkit-transition: .25s;
+        -moz-transition: .25s;
+            -o-transition: .25s;
+                transition: .25s;
+}
+
+/*img*/
+[data-input-tag="input-text"] img
+{
+    display: none !important;
+}
+[data-input-tag="input-text-img"] img
+{
+    position:absolute;
+    height: 75%;
+    top: 7.5%;
+    width: 1.5rem;
+    left: .75rem;
+    fill: white;
+}
+
+/*events*/
+
+/*hover*/
+[data-input-tag="input-text"] input:hover ~ label, 
+[data-input-tag="input-text"] input:valid ~ label,
+[data-input-tag="input-text"] input:focus ~ label,
+[data-input-tag="input-text"] input:placeholder-shown ~ label,
+[data-input-tag="input-text-img"] input:hover ~ label, 
+[data-input-tag="input-text-img"] input:valid ~ label,
+[data-input-tag="input-text-img"] input:focus ~ label,
+[data-input-tag="input-text-img"] input:placeholder-shown ~ label
+{
+    font-size: var(--f-small-size);
+    top:3%;
+    opacity:0.85;
+}
+
+[data-input-tag="input-text"] input:focus,
+[data-input-tag="input-text-img"] input:focus,
+[data-input-tag="input-text"] input:hover,
+[data-input-tag="input-text-img"] input:hover
+{
+    outline: 1px solid var(--p-focus) !important;
+}
+
+[data-input-tag="input-text"] input:focus ~ label,
+[data-input-tag="input-text-img"] input:focus ~ label,
+[data-input-tag="input-text"] input:hover ~ label,
+[data-input-tag="input-text-img"] input:hover ~ label
+{
+    color: var(--p-focus) !important;
+}
+
+/*validity*/
+[data-input-tag="input-text"] input:valid,
+[data-input-tag="input-text-img"] input:valid
+{
+    outline: 1px solid var(--p-border);
+}
+
+[data-input-validity-status="valid"] input
+{
+    outline: 1px solid var(--p-valid);
+}
+
+[data-input-validity-status="valid"] input ~ label
+{
+    color: var(--p-valid) !important;
+}
+
+[data-input-validity-status="invalid"] input
+{
+    outline: 1px solid var(--p-error);
+}
+
+[data-input-validity-status="invalid"] input ~ label
+{
+    color: var(--p-error) !important;
+}
+
+
+/*INPUT TAGS END*/
