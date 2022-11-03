@@ -229,7 +229,6 @@ body
 
 [data-input-tag="input-text"] input:focus,
 [data-input-tag="input-text-img"] input:focus,
-[data-input-tag="input-text"] input:hover,
 [data-input-tag="input-text-img"] input:hover
 {
     outline: 1px solid var(--p-focus) !important;
@@ -269,6 +268,4 @@ body
 {
     color: var(--p-error) !important;
 }
-
-
 /*INPUT TAGS END*/
