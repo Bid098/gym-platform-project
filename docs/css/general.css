@@ -107,6 +107,7 @@
 body
 {
     font-family: var(--f-family);
+    color: var(--p-text);
 }
 
 /*=============== CUSTOM TAGS =================*/
@@ -116,40 +117,77 @@ body
 [data-input-tag="input-text"]
 {
     position:relative;
-    width: 50vmin;
+    display: flex;
+    width: 20vw;
+    height: 4.5vh;
+    overflow: hidden;
+    align-items: center;
 }
 [data-input-tag="input-text-img"]
 {
     position:relative;
-    width: calc(50vmin - 2rem);
+    display: flex;
+    width: 20vw;
+    height: 4.5vh;
+    overflow: hidden;
+    align-items: center;
 }
+
+[data-input-tag="input-text-helper"]
+{
+    position:relative;
+    display: flex;
+    width: 20vw;
+    min-height: 5vh;
+    max-height: 10vh;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+}
+
+[data-input-tag="input-text-img-helper"]
+{
+    position:relative;
+    display: flex;
+    width: 20vw;
+    min-height: 5vh;
+    max-height: 10vh;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 /*input*/
 [data-input-tag="input-text"] input
 {
-    
-    position:relative;
-    display:block;
-    width: 100%;
-    line-height:1.5;
-    padding: .675rem .75rem .375rem .75rem;
+    position: relative;
+    display: flex;
+    width: calc(100% - 1.5rem - 6px);
+    height: calc(100% - 1.35rem - 4px);
+    line-height: 1.5;
+    padding: 0.675rem 0.75rem 0.675rem 0.75rem;
     border: 1px solid var(--p-text-op5);
-    background-color:  var(--p-background);
+    background-color: var(--p-background);
     color: var(--p-text);
-    border-radius:8px;
+    border-radius: 8px;
     outline: 1px solid var(--p-border-op4);
     -webkit-transition: outline-color .25s linear;
-        -moz-transition: outline-color .25s linear;
-            -o-transition: outline-color .25s linear;
-                transition: outline-color .25s linear;
+    -moz-transition: outline-color .25s linear;
+    -o-transition: outline-color .25s linear;
+    transition: outline-color .25s linear;
+    margin-left: 1px;
+    margin-right: 1px;
 }
+
 [data-input-tag="input-text-img"] input
 {
     position:relative;
-    display:block;
-    width: 100%;
-    line-height:1.5;
-    padding: .675rem .75rem .375rem 2.75rem;
+    display:flex;
+    width: calc(100% - 1.5rem - 6px);
+    height: calc(100% - 1.35rem - 4px);
+    line-height: 1.5;
+    padding: .675rem .75rem .675rem 2.75rem;
     border: 1px solid var(--p-text-op5);
     background-color:  var(--p-background);
     color: var(--p-text);
@@ -159,6 +197,50 @@ body
         -moz-transition: outline-color .25s linear;
             -o-transition: outline-color .25s linear;
                 transition: outline-color .25s linear;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+[data-input-tag="input-text-helper"] input
+{
+    position: relative;
+    display: flex;
+    width: calc(100% - 1.5rem - 6px);
+    height: calc(100% - 1.35rem);
+    line-height: 1.5;
+    padding: 0.675rem 0.75rem 0.675rem 0.75rem;
+    border: 1px solid var(--p-text-op5);
+    background-color: var(--p-background);
+    color: var(--p-text);
+    border-radius: 8px;
+    outline: 1px solid var(--p-border-op4);
+    -webkit-transition: outline-color .25s linear;
+    -moz-transition: outline-color .25s linear;
+    -o-transition: outline-color .25s linear;
+    transition: outline-color .25s linear;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+[data-input-tag="input-text-img-helper"] input
+{
+    position:relative;
+    display:flex;
+    width: calc(100% - 1.5rem - 6px);
+    height: calc(100% - 1.35rem);
+    line-height: 1.5;
+    padding: .675rem .75rem .675rem 2.75rem;
+    border: 1px solid var(--p-text-op5);
+    background-color:  var(--p-background);
+    color: var(--p-text);
+    border-radius:8px;
+    outline: 1px solid var(--p-border-op4);
+    -webkit-transition: outline-color .25s linear;
+        -moz-transition: outline-color .25s linear;
+            -o-transition: outline-color .25s linear;
+                transition: outline-color .25s linear;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 /*label*/
@@ -167,7 +249,7 @@ body
     position:absolute;
     pointer-events:none;
     color: var(--p-text);
-    left:.75rem;
+    left: calc(2px + .75rem);
     top: calc(70% - var(--f-normal-size));
     opacity:1;
     float:left;
@@ -178,13 +260,48 @@ body
             -o-transition: .25s;
                 transition: .25s;
 }
+
 [data-input-tag="input-text-img"] label
 {
     position:absolute;
     pointer-events:none;
     color: var(--p-text);
-    left: 2.75rem;
-    top: calc(70% - var(--f-normal-size));
+    left: calc(2px + 2.75rem);
+    top: calc(70% - var(--f-normal-size) - 2px);
+    opacity:1;
+    float:left;
+    text-align:left;
+    --f-family: 'Poppins', sans-serif;
+    -webkit-transition: .25s;
+        -moz-transition: .25s;
+            -o-transition: .25s;
+                transition: .25s;
+}
+
+[data-input-tag="input-text-helper"] label
+{
+    position:absolute;
+    pointer-events:none;
+    color: var(--p-text);
+    left: calc(2px + .75rem);
+    top: calc(30% - var(--f-normal-size));
+    opacity:1;
+    float:left;
+    text-align:left;
+    --f-family: 'Poppins', sans-serif;
+    -webkit-transition: .25s;
+        -moz-transition: .25s;
+            -o-transition: .25s;
+                transition: .25s;
+}
+
+[data-input-tag="input-text-img-helper"] label
+{
+    position:absolute;
+    pointer-events:none;
+    color: var(--p-text);
+    left: calc(2px + 2.75rem);
+    top: calc(30% - var(--f-normal-size));
     opacity:1;
     float:left;
     text-align:left;
@@ -196,18 +313,47 @@ body
 }
 
 /*img*/
-[data-input-tag="input-text"] img
+[data-input-tag="input-text"] img,
+[data-input-tag="input-text-helper"] img
 {
     display: none !important;
 }
+
 [data-input-tag="input-text-img"] img
 {
     position:absolute;
     height: 75%;
-    top: 7.5%;
+    top: 10%;
     width: 1.5rem;
     left: .75rem;
     fill: white;
+}
+
+[data-input-tag="input-text-img-helper"] img
+{
+    position: absolute;
+    height: 38.28%;
+    width: 1.5rem;
+    left: 0.75rem;
+    fill: white;
+}
+
+/*helper*/
+[data-input-tag="input-text-helper"] div,
+[data-input-tag="input-text-img-helper"] div
+{
+    display: flex;
+    width: 100%;
+    height: calc(4.5vh + 2px);
+    margin-top: 1px;
+}
+
+[data-input-tag="input-text-helper"] p,
+[data-input-tag="input-text-img-helper"] p
+{
+    margin:.35rem 0 0 .75rem;
+    max-width: calc(100% - 1.10rem);
+    min-height: calc(5vh - 3px - .35rem);
 }
 
 /*events*/
@@ -220,32 +366,50 @@ body
 [data-input-tag="input-text-img"] input:hover ~ label, 
 [data-input-tag="input-text-img"] input:valid ~ label,
 [data-input-tag="input-text-img"] input:focus ~ label,
-[data-input-tag="input-text-img"] input:placeholder-shown ~ label
+[data-input-tag="input-text-img"] input:placeholder-shown ~ label,
+[data-input-tag="input-text-helper"] input:hover ~ label, 
+[data-input-tag="input-text-helper"] input:valid ~ label,
+[data-input-tag="input-text-helper"] input:focus ~ label,
+[data-input-tag="input-text-helper"] input:placeholder-shown ~ label,
+[data-input-tag="input-text-img-helper"] input:hover ~ label, 
+[data-input-tag="input-text-img-helper"] input:valid ~ label,
+[data-input-tag="input-text-img-helper"] input:focus ~ label,
+[data-input-tag="input-text-img-helper"] input:placeholder-shown ~ label
 {
     font-size: var(--f-small-size);
-    top:3%;
+    top:2.75%;
     opacity:0.85;
 }
 
 [data-input-tag="input-text"] input:focus,
-[data-input-tag="input-text-img"] input:focus,
 [data-input-tag="input-text"] input:hover,
-[data-input-tag="input-text-img"] input:hover
+[data-input-tag="input-text-img"] input:focus,
+[data-input-tag="input-text-img"] input:hover,
+[data-input-tag="input-text-helper"] input:focus,
+[data-input-tag="input-text-helper"] input:hover,
+[data-input-tag="input-text-img-helper"] input:focus,
+[data-input-tag="input-text-img-helper"] input:hover
 {
     outline: 1px solid var(--p-focus) !important;
 }
 
 [data-input-tag="input-text"] input:focus ~ label,
-[data-input-tag="input-text-img"] input:focus ~ label,
 [data-input-tag="input-text"] input:hover ~ label,
-[data-input-tag="input-text-img"] input:hover ~ label
+[data-input-tag="input-text-img"] input:focus ~ label,
+[data-input-tag="input-text-img"] input:hover ~ label,
+[data-input-tag="input-text-helper"] input:focus ~ label,
+[data-input-tag="input-text-helper"] input:hover ~ label,
+[data-input-tag="input-text-img-helper"] input:focus ~ label,
+[data-input-tag="input-text-img-helper"] input:hover ~ label
 {
     color: var(--p-focus) !important;
 }
 
 /*validity*/
 [data-input-tag="input-text"] input:valid,
-[data-input-tag="input-text-img"] input:valid
+[data-input-tag="input-text-img"] input:valid,
+[data-input-tag="input-text-helper"] input:valid,
+[data-input-tag="input-text-img-helper"] input:valid
 {
     outline: 1px solid var(--p-border);
 }
@@ -269,6 +433,4 @@ body
 {
     color: var(--p-error) !important;
 }
-
-
 /*INPUT TAGS END*/
